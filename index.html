@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <div class="backdrop">
+        <div class="modal">
+            <div action="new_hero" autocomplete="off">
+                <label>
+                    Введіть ім'я вашого героя
+                    <input data-name type="text" name="hero_name" placeholder=" " required autofocus>
+                </label>
+                <div data-heroSex role="group" aria-labelledby="hero-ses">
+                    <label> 
+                        <input data-heroSex type="radio" name="sex" value="man" checked> 
+                        Чоловік
+                    </label>
+                    <label>
+                        <input data-heroSex type="radio" name="sex" value="woman">
+                        Жінка
+                    </label>
+                </div>
+                <label> Спеціланість
+                    <select data-heroSpecialty name="specialty">
+                        <option value="warrior">Воїн</option>
+                        <option value="mage">Маг</option>
+                        <option value="archer">Лучник</option>
+                        <option value="healer">Цілитель</option>
+                    </select>
+                </label>
+                <label> Оберіть рівень
+                    <select data-heroLever name="level">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
+
+                <button type="submit" data-add>Завершити налаштування</button>
+            </form>
+            
+        </div>
+    </div>
+    
+
+    <script src="./js/form.js" type="module"></script>
+</body>
+</html>
